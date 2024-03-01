@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+header{
+    position: sticky;
+    background: #fff;
+    top: 0;
+    z-index: 1000;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+
+.header-logo span{
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 1rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family:'Work Sans', sans-serif;
+}
+
+.header-logo img{
+    height: 3.5rem;
+    width: 3.5rem;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 0.5px solid rgb(219, 207, 207);
+    
+}
+
+.header-main .header-links{
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+}
+
+.header-main .header-links li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family:'Work Sans', sans-serif;
+    color: black;
+}
+
+.header-logo span:hover, .header-links li a:hover{
+    color: #0062b9;
+}
+
+.hero-section{
+    /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main-image img{
+    border-radius: 50%;
+    /* object-fit: contain; */
+    height: 350px;
+    width: 350px;
+}
+
+.hero-section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 3rem;
+    gap: 4rem;
+}
+
+.hero-name h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: .15em;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end),blink-caret .5s step-end infinite;
+    margin: 0 auto;
+}
+
+.hero-name{
+    display: inline-block;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+.hero-about p{
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;  
+}
+
+.hero-project-button a{
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    color: white;
+    padding: 1rem 4rem;
+    background-color: orange;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: transform .3s;
+}
+
+.hero-project-button a:hover,.about-content-details a:hover,.contact-form form button:hover,.project-desc a:hover{
+    transform: translateY(-3px);
+}
+
+.hero-project-button{
+    background-color: black;
+    border-radius: 10px;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    padding: 3rem 2rem; 
+}
+
+.about-section h2,#project-title{
+    text-align: center;
+    letter-spacing: 3px;
+    /* padding: 6rem 0 0 0; */
+    font-size: 40px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+.about-text-line,.project-text-line{
+    height: 6px;
+    width: 35px;
+    background-color: #0062b9;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.about-section{
+    background-color: whitesmoke;
+    padding: 6rem 4rem;
+}
+
+.about-me-text h3{
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.about-me-text, .about-me-skills{
+    width: 50%;
+    padding: 1rem 5rem;
+}
+
+.about-content-details p{
+    font-size: 17px;
+    line-height: 1.8;
+    font-family: 'Work Sans', sans-serif;
+    color: grey;
+}
+
+
+.about-content-details a{
+    padding: 1rem 3rem;
+    background-color: #0062b9;
+    color: white;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 2rem;
+    border-radius: 5px;
+    transition: transform .3s;
+}
+
+
+
+.about-me-skills h3{
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#about-contact{
+    margin-top: 1rem;
+}
+
+.skill-skills{
+    padding: 0.8rem 1.5rem;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+    color: #777;
+    background-color: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+}
+
+.projects-section{
+    padding: 6rem 4rem;
+}
+
+#project-heading-desc,#contact-heading-desc{
+    font-size: 20px;
+    line-height: 1.8;
+    font-family: 'Work Sans', sans-serif;
+    color: grey;
+    text-align: center;
+    padding: 1rem 15rem 3rem 15rem;
+}
+
+#contact-heading-desc{
+    color: white;
+}
+
+.project-img img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.project-img{
+    position: relative;
+}
+
+.project-img .website-img{
+    position: absolute;
+    top: 6%;
+    left: 15.25%;
+    width: 470px;
+    height: 377px;
+}
+
+.main-image img{
+    cursor: pointer;
+}
+
+.main-image img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.first-project{
+    display: flex;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.project-desc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.my-project{
+    padding: 0rem 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.project-desc h3{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.project-desc p{
+    font-size: 17px;
+    line-height: 1.5;
+    font-family: 'Work Sans', sans-serif;
+    color: grey;
+}
+
+.project-desc a{
+    padding: 1rem 3rem;
+    background-color: #0062b9;
+    color: white;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: inline-block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.contact-section{
+    padding: 6rem 4rem;
+    background-color: black;
+}
+
+#contact-title{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 40px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.contact-text-line{
+    height: 6px;
+    width: 35px;
+    background-color: orange;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.contact-form form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 15rem 0rem 15rem;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 5px;
+}
+
+.contact-form form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form div input,.contact-form form div textarea{
+    padding: 1.5rem 2.5rem;
+    background-color: rgba(153, 153, 153, 0.2);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form form div input::placeholder{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.contact-form form div textarea::placeholder{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.contact-form form div label{
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 1rem;
+    color: grey;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contact-form form button{
+    padding: 1.5rem 3rem;
+    background-color: #0062b9;
+    color: white;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 2rem;
+    border-radius: 5px;
+    transition: transform .3s;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    
+}
+
+.contact-form-button{
+    max-width: 30%;
+}
+
+.footer-section{
+    background-color: black;
+}
+
+.footer-main-content p{
+    color: white;
+    margin-top: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5;
+}
+
+
+.footer-main-content h2,.social h2{
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.footer-main-content{
+    max-width: 50em;
+    width: 40%;
+}
+
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0rem;
+    border-bottom: 1px solid #fff;
+}
+
+.social-handles{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-handles a img{
+    width: 2rem;
+}
+
+.footer-container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.website-copyrights{
+    color: white;
+    text-align: center;
+    padding: 2rem 0rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.website-copyrights a{
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.contact-form-field small{
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 1px;
+    color: red;
+    visibility: hidden;
+}
+
+.contact-form-field.success small{
+    color: green;
+    visibility: visible;
+}
+
+/* .contact-form-field.success input{
+    border: 2px solid green;
+} */
+
+.contact-form-field.error small{
+    color: red;
+    visibility: visible;
+}
